@@ -1,9 +1,21 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet,  View } from 'react-native';
+import TwitterSvg from './components/TwitterSvg'
+import TwitterPixelSvg from './components/TwitterPixelSvg'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello World!</Text>
+<TwitterSvg
+        width={120}
+        height={40}
+        fill='black'
+        marginBottom={20}
+      />
+      <TwitterPixelSvg
+        width={120}
+        height={40}
+        fill='blue'
+      />
     </View>
   );
 }
