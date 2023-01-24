@@ -1,9 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native';
+import GradientText from './components/GradientText';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello World!</Text>
+ <GradientText>Hello World!</GradientText>
     </View>
   );
 }
