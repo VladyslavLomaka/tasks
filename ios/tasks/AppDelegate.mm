@@ -1,5 +1,5 @@
 #import "AppDelegate.h"
-#import <ReactNativeNavigation/ReactNativeNavigation.h>
+
 
 #import <React/RCTBundleURLProvider.h>
 
@@ -13,10 +13,6 @@
   self.initialProps = @{};
 
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
-}
-
-- (NSArray<id<RCTBridgeModule>> *)extraModulesForBridge:(RCTBridge *)bridge {
-  return [ReactNativeNavigation extraModulesForBridge:bridge];
 }
 
 - (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
