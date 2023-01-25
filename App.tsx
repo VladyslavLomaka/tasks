@@ -1,9 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native';
+import Config from 'react-native-config';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Hello World!</Text>
+      <Text>{Config.NEWS_API}</Text>
     </View>
   );
 }
